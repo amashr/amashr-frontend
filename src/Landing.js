@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 
-class App extends Component {
+class Landing extends Component {
   render() {
     return (
       <Fragment>
@@ -14,4 +14,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Landing;
