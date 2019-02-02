@@ -1,6 +1,9 @@
 import React from 'react';
 
+import interactionImg from '../assets/images/interaction.svg';
 import Bar from './Bar';
+import Button from './Button';
+import './Hero.scss';
 
 const Hero = () => (
   <main className="Hero">
@@ -13,12 +16,12 @@ const Hero = () => (
         AMAS HR is here for you. Just focus on your core business.
       </p>
       <div className="Hero__btnContainer">
-        {/* <Button path="/" desc="Request Demo" cssClass="Btn Btn--orange-6" />
-        <Button path="/" desc="Contact Sales" cssClass="Btn" /> */}
+        <Button path="/" desc="Request Demo" cssClass="Btn Btn--orange-6" />
+        <Button path="/" desc="Contact Sales" cssClass="Btn" />
       </div>
     </div>
     <div className="Hero__img">
-      {/* <img src={interactionImg} alt="Interaction" /> */}
+      <img src={interactionImg} alt="Interaction" />
     </div>
   </main>
 );
