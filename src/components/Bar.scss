@@ -1,0 +1,7 @@
+.Bar {
+  & {
+    background: var(--color-cool-grey-10);
+    width: 5rem;
+    height: 0.5rem;
+  }
+}
