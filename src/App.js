@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            AMASHR Under construction 
+            AMASHR Under construction!  
           </a>
         </header>
       </div>
