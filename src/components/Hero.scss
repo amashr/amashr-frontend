@@ -1,11 +1,9 @@
 .Hero {
-  & {
-    color: var(--color-cool-grey-10);
-    background: var(--gradient-blue-vivid-1);
-    min-height: 100vh;
+  color: var(--color-cool-grey-10);
+  background: var(--gradient-blue-vivid-1);
+  min-height: 100vh;
 
-    display: flex;
-  }
+  display: flex;
 
   &__content {
     align-self: center;
