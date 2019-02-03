@@ -6,4 +6,4 @@ before_install:
   - docker build -t amaumba1/amashr-frontend -f Dockerfile.dev .
 
 script: 
-  - docker run amaumba1/amashr-frontend npm run test -- -- coverage
+  - docker run amaumba1/amashr-frontend npm run test -- --coverage
