@@ -1,4 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AMASHR HUMAN RESOURCE MANAGEMENT SYSTEM (AHRMS)
+
+This repository contains the client application for AMASHR System. The app was created and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# The Project was built using 
+- React                [View]
+- Redux                [State Management]
+- Redux-Saga           [Redux Middleware]
+- Appolo-Client        [Graphql Client]
+
+## Development 
+
+The development for this project was done using Docker. To run the platform in Docker you need to do the following: 
+
+| Steps                           | Description                               | 
+
+|---------------------------------|
+|------------------------------------------------------------------------------|
+| [npm run start](development)    |  Starts up a development server. For development use  only. | 
 
 ## Available Scripts
 
