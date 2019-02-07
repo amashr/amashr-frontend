@@ -1,6 +1,5 @@
 ///////////////////
 /////// CSS VARS
-
 :root {
   --color-cool-grey-6: #3e4c59;
   --color-cool-grey-7: #9aa5b1;
@@ -32,7 +31,6 @@
 
 ///////////////////
 /////// SASS VARS
-
 $bp-tabland: 60em; // 600px
 $bp-tabport: 90em; // 900px
 $bp-normal: 120em; // 1200px
@@ -40,7 +38,6 @@ $bp-bigdesk: 180em; // 1800px
 
 ///////////////////
 /////// FONT
-
 @font-face {
   font-family: 'Proxima Nova Bd';
   src: url('./assets/fonts/ProximaNova-Semibold.eot');
@@ -71,12 +68,6 @@ $bp-bigdesk: 180em; // 1800px
 
 ///////////////////
 /////// BASE
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
-}
-
 * {
   &,
   &::before,
@@ -85,6 +76,11 @@ html {
     padding: 0;
     box-sizing: inherit;
   }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 }
 
 body {
