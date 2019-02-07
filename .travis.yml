@@ -15,7 +15,7 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-2-710982766664"
   bucket_path: "amashr-frontend"
   on:
-    branch: sp1/pipeline-settings
+    branch: sp1/landing
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
