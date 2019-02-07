@@ -1,4 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AMASHR HUMAN RESOURCE MANAGEMENT SYSTEM (AHRMS)
+
+This repository contains the client application for AMASHR System. The app was created and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# The Project was built using 
+- React                [View]
+- Redux                [State Management]
+- Redux-Saga           [Redux Middleware]
+- Appolo-Client        [Graphql Client]
+
+## Development 
+
+The development for this project was done using Docker. To run the platform in Docker you need to do the following: 
+
+| Steps                           | Description                               | 
+
+|---------------------------------|
+|------------------------------------------------------------------------------|
+| [npm run start](development)    |  Starts up a development server. For development use  only. | 
 
 ## Available Scripts
 
@@ -66,3 +84,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+To fix the issue with Docker container please intall 
+npm install terser@3.14.1 --save dev
+

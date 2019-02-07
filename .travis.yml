@@ -1,0 +1,21 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t amaumba1/amashr-frontend -f Dockerfile.dev .
+
+script: 
+  - docker run amaumba1/amashr-frontend npm run test -- --coverage
+
+deploy: 
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  env: "AmashrFrontend-env"
+  bucket_name: "elasticbeanstalk-us-east-2-710982766664"
+  bucket_path: "amashr-frontend"
+  on:
+    branch: sp1/pipeline-settings
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
