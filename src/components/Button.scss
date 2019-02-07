@@ -1,0 +1,20 @@
+.Btn {
+  &,
+  &:visited {
+    font-size: 1.8rem;
+    padding: 1rem 3.4rem;
+    background: var(--color-cyan-vivid-4);
+    border-radius: 3rem;
+    box-shadow: var(--shadow-btn-1);
+    display: inline-block;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-cool-grey-10);
+  }
+
+  &--orange-6:visited {
+    background: var(--color-orange-vivid-6);
+  }
+}
