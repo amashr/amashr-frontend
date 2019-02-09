@@ -5,7 +5,6 @@
   background: var(--gradient-blue-vivid-1);
   min-height: 95vh;
   display: flex;
-  flex-wrap: wrap;
 
   @include respond(desktop) {
     min-height: 100vh;
@@ -25,6 +24,11 @@
     }
 
     @include respond(desktop) {
+      flex: 1;
+      margin: 0 2rem 0 7%;
+    }
+
+    @include respond(bigdesktop) {
       flex: 0 0 64.9rem;
       margin: 0 6.1rem 0 10rem;
     }
@@ -53,8 +57,8 @@
     display: none;
 
     @include respond(tabland) {
-      display: inline-block;
-      // margin-right: 5rem;
+      display: block;
+      margin-right: 4rem;
       position: relative;
       z-index: 10;
 
@@ -63,13 +67,17 @@
     }
 
     @include respond(desktop) {
-      display: inline-block;
+      // height: 48rem;
+      margin-right: 7%;
+
+      // flex: 0 0 58rem;
+    }
+
+    @include respond(bigdesktop) {
+      display: block;
       height: 48rem;
       margin-right: 5rem;
-      position: relative;
-      z-index: 10;
 
-      align-self: center;
       flex: 0 0 58rem;
     }
   }
