@@ -75,9 +75,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 40%;
+  font-size: 44%;
 
   @include respond(tabport) {
+    font-size: 50%;
+  }
+
+  @include respond(tabland) {
     font-size: 62.5%;
   }
 }

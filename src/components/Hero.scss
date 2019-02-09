@@ -3,10 +3,11 @@
 .Hero {
   color: var(--color-cool-grey-10);
   background: var(--gradient-blue-vivid-1);
-  min-height: 85vh;
+  min-height: 95vh;
   display: flex;
+  flex-wrap: wrap;
 
-  @include respond(tabport) {
+  @include respond(tabland) {
     min-height: 100vh;
   }
 
@@ -15,6 +16,10 @@
     margin: 0 2rem;
 
     @include respond(tabport) {
+      margin: 0 5rem;
+    }
+
+    @include respond(tabland) {
       flex: 0 0 64.9rem;
       margin: 0 6.1rem 0 10rem;
     }
@@ -23,9 +28,14 @@
   &__title {
     font-size: 5rem;
     padding-bottom: 2rem;
+    max-width: 55rem;
 
     @include respond(tabport) {
-      width: 55rem;
+      max-width: 90rem;
+    }
+
+    @include respond(tabland) {
+      max-width: 55rem;
     }
   }
 
@@ -37,7 +47,7 @@
   &__img {
     display: none;
 
-    @include respond(tabport) {
+    @include respond(tabland) {
       display: inline-block;
       height: 48rem;
       margin-right: 5rem;
