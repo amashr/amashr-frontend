@@ -1,0 +1,30 @@
+/* 
+Break Point
+tabport: 600px; 37.5em
+tabland: 900px; 56.25em
+desktop: 1200px; 75em
+bigdesktop: 1800px; 112.5em
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tabport {
+    @media only screen and (min-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabland {
+    @media only screen and (min-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desk {
+    @media only screen and (min-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == bigdesk {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

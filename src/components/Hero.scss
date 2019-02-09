@@ -1,20 +1,32 @@
+@import '../assets/sass/mixins.scss';
+
 .Hero {
   color: var(--color-cool-grey-10);
   background: var(--gradient-blue-vivid-1);
-  min-height: 100vh;
-
+  min-height: 85vh;
   display: flex;
+
+  @include respond(tabport) {
+    min-height: 100vh;
+  }
 
   &__content {
     align-self: center;
-    flex: 0 0 64.9rem;
-    margin: 0 6.1rem 0 10rem;
+    margin: 0 2rem;
+
+    @include respond(tabport) {
+      flex: 0 0 64.9rem;
+      margin: 0 6.1rem 0 10rem;
+    }
   }
 
   &__title {
-    width: 55rem;
     font-size: 5rem;
     padding-bottom: 2rem;
+
+    @include respond(tabport) {
+      width: 55rem;
+    }
   }
 
   &__desc {
@@ -23,13 +35,18 @@
   }
 
   &__img {
-    height: 48rem;
-    margin-right: 5rem;
-    position: relative;
-    z-index: 10;
+    display: none;
 
-    align-self: center;
-    flex: 0 0 58rem;
+    @include respond(tabport) {
+      display: inline-block;
+      height: 48rem;
+      margin-right: 5rem;
+      position: relative;
+      z-index: 10;
+
+      align-self: center;
+      flex: 0 0 58rem;
+    }
   }
 
   &__btnContainer {
@@ -41,10 +58,15 @@
   }
 
   &__bottomGradient {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 27.9rem;
+    display: none;
+
+    @include respond(tabport) {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 27.9rem;
+    }
   }
 }
