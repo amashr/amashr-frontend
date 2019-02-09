@@ -29,12 +29,36 @@
   --line: 1px solid var(--color-cool-grey-10);
 }
 
-///////////////////
-/////// SASS VARS
-$bp-tabland: 60em; // 600px
-$bp-tabport: 90em; // 900px
-$bp-normal: 120em; // 1200px
-$bp-bigdesk: 180em; // 1800px
+/* 
+Break Point
+tabport: 600px; 37.5em
+tabland: 900px; 56.25em
+desktop: 1200px; 75em
+bigdesktop: 1800px; 112.5em
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tabport {
+    @media only screen and (min-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabland {
+    @media only screen and (min-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desk {
+    @media only screen and (min-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == bigdesk {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
 
 ///////////////////
 /////// FONT
@@ -80,7 +104,7 @@ $bp-bigdesk: 180em; // 1800px
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  font-size: 62.5%;
 }
 
 body {
