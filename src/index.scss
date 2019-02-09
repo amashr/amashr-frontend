@@ -82,6 +82,10 @@ html {
   }
 
   @include respond(tabland) {
+    font-size: 55%;
+  }
+
+  @include respond(desktop) {
     font-size: 62.5%;
   }
 }
