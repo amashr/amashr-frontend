@@ -1,20 +1,51 @@
+@import '../assets/sass/mixins.scss';
+
 .Hero {
   color: var(--color-cool-grey-10);
   background: var(--gradient-blue-vivid-1);
-  min-height: 100vh;
-
+  min-height: 95vh;
   display: flex;
+
+  @include respond(desktop) {
+    min-height: 100vh;
+  }
 
   &__content {
     align-self: center;
-    flex: 0 0 64.9rem;
-    margin: 0 6.1rem 0 10rem;
+    margin: 0 2rem;
+    position: relative;
+    z-index: 10;
+
+    @include respond(tabport) {
+      margin: 0 4rem;
+    }
+
+    @include respond(tabland) {
+      margin: 0 1rem 0 4rem;
+      flex: 1;
+    }
+
+    @include respond(desktop) {
+      margin: 0 2rem 0 7%;
+    }
+
+    @include respond(bigdesktop) {
+      margin: 0 2rem 0 10%;
+    }
   }
 
   &__title {
-    width: 55rem;
     font-size: 5rem;
     padding-bottom: 2rem;
+    max-width: 55rem;
+
+    @include respond(tabport) {
+      max-width: 90rem;
+    }
+
+    @include respond(tabland) {
+      max-width: 55rem;
+    }
   }
 
   &__desc {
@@ -23,13 +54,25 @@
   }
 
   &__img {
-    height: 48rem;
-    margin-right: 5rem;
-    position: relative;
-    z-index: 10;
+    display: none;
 
-    align-self: center;
-    flex: 0 0 58rem;
+    @include respond(tabland) {
+      display: block;
+      margin-right: 4rem;
+      position: relative;
+      z-index: 10;
+
+      align-self: center;
+      flex: 1;
+    }
+
+    @include respond(desktop) {
+      margin-right: 7%;
+    }
+
+    @include respond(bigdesktop) {
+      margin-right: 10%;
+    }
   }
 
   &__btnContainer {
@@ -41,10 +84,11 @@
   }
 
   &__bottomGradient {
+    display: block;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 27.9rem;
+    height: auto;
   }
 }

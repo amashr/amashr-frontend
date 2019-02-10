@@ -1,3 +1,5 @@
+@import './assets/sass/mixins.scss';
+
 ///////////////////
 /////// CSS VARS
 :root {
@@ -27,37 +29,6 @@
   --shadow-card-2: 0 3rem 6rem rgba(0, 0, 0, 0.25);
 
   --line: 1px solid var(--color-cool-grey-10);
-}
-
-/* 
-Break Point
-tabport: 600px; 37.5em
-tabland: 900px; 56.25em
-desktop: 1200px; 75em
-bigdesktop: 1800px; 112.5em
-*/
-
-@mixin respond($breakpoint) {
-  @if $breakpoint == tabport {
-    @media only screen and (min-width: 37.5em) {
-      @content;
-    }
-  }
-  @if $breakpoint == tabland {
-    @media only screen and (min-width: 56.25em) {
-      @content;
-    }
-  }
-  @if $breakpoint == desk {
-    @media only screen and (min-width: 75em) {
-      @content;
-    }
-  }
-  @if $breakpoint == bigdesk {
-    @media only screen and (min-width: 112.5em) {
-      @content;
-    }
-  }
 }
 
 ///////////////////
@@ -104,7 +75,23 @@ bigdesktop: 1800px; 112.5em
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 44%;
+
+  @include respond(tabport) {
+    font-size: 50%;
+  }
+
+  @include respond(tabland) {
+    font-size: 55%;
+  }
+
+  @include respond(desktop) {
+    font-size: 62.5%;
+  }
+
+  @include respond(bigdesktop) {
+    font-size: 70%;
+  }
 }
 
 body {
