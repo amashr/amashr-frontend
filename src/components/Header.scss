@@ -26,7 +26,15 @@
 
   &__brand a,
   &__brand a:visited {
-    font-size: 2.3rem;
+    font-size: 2rem;
+
+    @include respond(tabport) {
+      font-size: 2.1rem;
+    }
+
+    @include respond(tabland) {
+      font-size: 2.3rem;
+    }
   }
 
   &__nav {
