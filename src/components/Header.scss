@@ -1,0 +1,58 @@
+@import '../assets/sass/mixins.scss';
+
+.Header {
+  font-size: 1.8rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: transparent;
+  height: 6rem;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(tabport) {
+    height: 8rem;
+    padding: 0 3rem;
+  }
+
+  @include respond(bigdesktop) {
+    font-size: 2rem;
+    height: 9rem;
+    padding: 0 5rem;
+  }
+
+  &__brand a,
+  &__brand a:visited {
+    font-size: 2rem;
+
+    @include respond(tabport) {
+      font-size: 2.1rem;
+    }
+
+    @include respond(tabland) {
+      font-size: 2.3rem;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include respond(desktop) {
+      display: block;
+    }
+  }
+
+  &__nav a,
+  &__nav a:visited {
+    margin: 0 1.5rem;
+  }
+
+  &__nav a.Btn {
+    margin-right: 0;
+  }
+}
