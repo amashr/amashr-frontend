@@ -1,16 +1,40 @@
+@import '../assets/sass/mixins.scss';
+
 .Partnering {
-  padding: 0 15rem;
-  height: 60rem;
+  padding: 4rem 2rem;
 
-  display: flex;
-  align-items: center;
+  @include respond(tabport) {
+    padding: 5rem 6rem;
+  }
 
-  &__content {
-    flex: 0 0 60rem;
-    margin-right: 14rem;
+  @include respond(tabland) {
+    padding: 7rem 5rem;
 
     display: flex;
+    justify-content: space-between;
+  }
+
+  @include respond(desktop) {
+    padding: 0 15rem;
+    height: 60rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
     flex-direction: column;
+
+    @include respond(tabland) {
+      flex: 1;
+      margin-right: 2.5rem;
+    }
+
+    @include respond(desktop) {
+      flex: 0 0 60rem;
+      margin-right: 14rem;
+    }
   }
 
   &__title {
@@ -42,7 +66,18 @@
   }
 
   &__img {
-    width: 40rem;
-    height: 40rem;
+    display: none;
+
+    @include respond(tabland) {
+      display: block;
+      height: 40rem;
+      flex: 1;
+    }
+
+    @include respond(desktop) {
+      display: block;
+      width: 40rem;
+      height: 40rem;
+    }
   }
 }
