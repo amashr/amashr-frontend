@@ -15,11 +15,15 @@
   }
 
   @include respond(desktop) {
-    padding: 0 15rem;
-    height: 60rem;
+    padding: 0 9rem;
+    min-height: 60rem;
 
-    display: flex;
     align-items: center;
+  }
+
+  @include respond(bigdesktop) {
+    padding: 0 15rem;
+    min-height: 70rem;
   }
 
   &__content {
@@ -28,12 +32,15 @@
 
     @include respond(tabland) {
       flex: 1;
-      margin-right: 2.5rem;
+      padding-right: 2.5rem;
     }
 
     @include respond(desktop) {
-      flex: 0 0 60rem;
-      margin-right: 14rem;
+      padding-right: 4rem;
+    }
+
+    @include respond(bigdesktop) {
+      padding-right: 14rem;
     }
   }
 
@@ -74,10 +81,8 @@
       flex: 1;
     }
 
-    @include respond(desktop) {
-      display: block;
-      width: 40rem;
-      height: 40rem;
+    @include respond(bigdesktop) {
+      height: 60rem;
     }
   }
 }
