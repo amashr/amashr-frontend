@@ -2,6 +2,7 @@ import React from 'react';
 
 import Bar from './Bar';
 import Button from './Button';
+import './Experience.scss';
 
 const Experience = () => (
   <div className="Experience">
