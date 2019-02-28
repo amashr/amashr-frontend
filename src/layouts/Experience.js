@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Bar from './Bar';
-import Button from './Button';
+import Bar from '../components/Bar';
+import Button from '../components/Button';
 import './Experience.scss';
 
 const Experience = () => (

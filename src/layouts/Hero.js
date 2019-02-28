@@ -1,8 +1,8 @@
 import React from 'react';
 
 import interactionImg from '../assets/images/interaction.svg';
-import Bar from './Bar';
-import Button from './Button';
+import Bar from '../components/Bar';
+import Button from '../components/Button';
 import './Hero.scss';
 
 const Hero = () => (

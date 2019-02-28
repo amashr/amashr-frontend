@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Partnering.scss';
-import Button from './Button';
+import Button from '../components/Button';
 import chattingImg from '../assets/images/chatting.svg';
 
 const Partnering = () => (
