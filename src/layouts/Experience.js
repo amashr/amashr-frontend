@@ -7,175 +7,140 @@ import './Experience.scss';
 const Experience = () => (
   <div className="Experience">
     <svg
-      width="410"
-      height="761"
-      viewBox="0 0 410 761"
+      className="Experience__phone"
+      width="316"
+      height="668"
+      viewBox="0 0 316 668"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g filter="url(#filter0_d)">
-        <rect
-          x="47"
-          y="23.8849"
-          width="316"
-          height="666.694"
-          rx="27.8142"
-          fill="#D0BFAB"
-        />
-        <rect
-          x="49.5378"
-          y="26.5618"
-          width="310.924"
-          height="661.34"
-          rx="27.0416"
-          fill="#EEDDCC"
-          stroke="#DED2C6"
-          stroke-width="1.54523"
-        />
-        <rect
-          x="51.7999"
-          y="29.033"
-          width="306.401"
-          height="656.397"
-          rx="25.8826"
-          fill="white"
-          stroke="#E1CAB9"
-          stroke-width="0.772616"
-        />
-        <rect
-          x="62.8882"
-          y="80.0778"
-          width="284.224"
-          height="544.785"
-          fill="url(#paint0_radial)"
-        />
-        <rect
-          x="182.437"
-          y="49.9863"
-          width="45.1268"
-          height="6.84689"
-          rx="3.42345"
-          fill="black"
-          stroke="#3C3C3C"
-          stroke-width="0.772616"
-        />
-        <rect
-          x="183.815"
-          y="51.5052"
-          width="42.3687"
-          height="4.76184"
-          rx="1.54523"
-          fill="url(#paint1_linear)"
-        />
-        <rect
-          x="161.252"
-          y="49.9863"
-          width="6.28888"
-          height="6.84689"
-          rx="3.14444"
-          fill="black"
-          stroke="#3C3C3C"
-          stroke-width="0.772616"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M164.397 55.3136C165.372 55.3136 166.162 54.461 166.162 53.4093C166.162 52.3576 165.372 51.505 164.397 51.505C163.422 51.505 162.631 52.3576 162.631 53.4093C162.631 54.461 163.422 55.3136 164.397 55.3136Z"
-          fill="url(#paint2_linear)"
-        />
-        <rect
-          x="242.46"
-          y="49.9863"
-          width="6.28882"
-          height="6.84689"
-          rx="3.14441"
-          fill="black"
-          stroke="#3C3C3C"
-          stroke-width="0.772616"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M245.603 55.3136C246.578 55.3136 247.369 54.461 247.369 53.4093C247.369 52.3576 246.578 51.505 245.603 51.505C244.628 51.505 243.838 52.3576 243.838 53.4093C243.838 54.461 244.628 55.3136 245.603 55.3136Z"
-          fill="url(#paint3_linear)"
-        />
-      </g>
+      <rect
+        y="0.884888"
+        width="316"
+        height="666.694"
+        rx="27.8142"
+        fill="#D0BFAB"
+      />
+      <rect
+        x="2.53775"
+        y="3.5618"
+        width="310.924"
+        height="661.34"
+        rx="27.0416"
+        fill="#EEDDCC"
+        stroke="#DED2C6"
+        strokeWidth="1.54523"
+      />
+      <rect
+        x="4.79988"
+        y="6.03304"
+        width="306.401"
+        height="656.397"
+        rx="25.8826"
+        fill="white"
+        stroke="#E1CAB9"
+        strokeWidth="0.772616"
+      />
+      <rect
+        x="15.8882"
+        y="57.0778"
+        width="284.224"
+        height="544.785"
+        fill="url(#paint0_radial)"
+      />
+      <rect
+        x="135.437"
+        y="26.9863"
+        width="45.1268"
+        height="6.84689"
+        rx="3.42345"
+        fill="black"
+        stroke="#3C3C3C"
+        strokeWidth="0.772616"
+      />
+      <rect
+        x="136.815"
+        y="28.5052"
+        width="42.3687"
+        height="4.76184"
+        rx="1.54523"
+        fill="url(#paint1_linear)"
+      />
+      <rect
+        x="114.252"
+        y="26.9863"
+        width="6.28888"
+        height="6.84689"
+        rx="3.14444"
+        fill="black"
+        stroke="#3C3C3C"
+        strokeWidth="0.772616"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M117.397 32.3136C118.372 32.3136 119.162 31.461 119.162 30.4093C119.162 29.3576 118.372 28.505 117.397 28.505C116.422 28.505 115.631 29.3576 115.631 30.4093C115.631 31.461 116.422 32.3136 117.397 32.3136Z"
+        fill="url(#paint2_linear)"
+      />
+      <rect
+        x="195.46"
+        y="26.9863"
+        width="6.28882"
+        height="6.84689"
+        rx="3.14441"
+        fill="black"
+        stroke="#3C3C3C"
+        strokeWidth="0.772616"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M198.603 32.3136C199.578 32.3136 200.369 31.461 200.369 30.4093C200.369 29.3576 199.578 28.505 198.603 28.505C197.628 28.505 196.838 29.3576 196.838 30.4093C196.838 31.461 197.628 32.3136 198.603 32.3136Z"
+        fill="url(#paint3_linear)"
+      />
       <defs>
-        <filter
-          id="filter0_d"
-          x="0.643036"
-          y="0.706406"
-          width="408.714"
-          height="759.408"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          />
-          <feOffset dy="23.1785" />
-          <feGaussianBlur stdDeviation="23.1785" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.88 0"
-          />
-          <feBlend
-            mode="darken"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow"
-            result="shape"
-          />
-        </filter>
         <radialGradient
           id="paint0_radial"
           cx="0"
           cy="0"
           r="1"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(124.531 466.917) rotate(90) scale(544.785 284.224)"
+          gradientTransform="translate(77.5311 443.917) rotate(90) scale(544.785 284.224)"
         >
-          <stop stop-color="#29D1F7" />
-          <stop offset="1" stop-color="#1355FF" />
+          <stop stopColor="#29D1F7" />
+          <stop offset="1" stopColor="#1355FF" />
         </radialGradient>
         <linearGradient
           id="paint1_linear"
-          x1="183.815"
-          y1="51.5052"
-          x2="183.815"
-          y2="56.2671"
+          x1="136.815"
+          y1="28.5052"
+          x2="136.815"
+          y2="33.2671"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3C3C3C" />
+          <stop stopColor="#3C3C3C" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
-          x1="162.631"
-          y1="51.505"
-          x2="162.631"
-          y2="55.3136"
+          x1="115.631"
+          y1="28.505"
+          x2="115.631"
+          y2="32.3136"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3C3C3C" />
+          <stop stopColor="#3C3C3C" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
           id="paint3_linear"
-          x1="243.838"
-          y1="51.505"
-          x2="243.838"
-          y2="55.3136"
+          x1="196.838"
+          y1="28.505"
+          x2="196.838"
+          y2="32.3136"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#3C3C3C" />
+          <stop stopColor="#3C3C3C" />
           <stop offset="1" />
         </linearGradient>
       </defs>

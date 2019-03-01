@@ -1,3 +1,40 @@
 .Experience {
   background: var(--color-blue-vivid-7);
+  position: relative;
+
+  &__phone {
+    position: absolute;
+    top: 71px;
+    left: 200px;
+    max-width: 316px;
+    box-shadow: var(--shadow-card-2);
+  }
+
+  &__content {
+    margin-left: auto;
+    max-width: 600px;
+    padding-top: 138px;
+    padding-right: 200px;
+    padding-bottom: 103px;
+  }
+
+  &__title {
+    max-width: 375px;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--color-cool-grey-10);
+  }
+
+  &__text {
+    line-height: 2.9rem;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    margin-bottom: 3rem;
+  }
+
+  &__sub-text {
+    line-height: 2.6rem;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+  }
 }
