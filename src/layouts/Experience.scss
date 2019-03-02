@@ -1,40 +1,73 @@
+@import '../assets/sass/mixins.scss';
+
 .Experience {
   background: var(--color-blue-vivid-7);
   position: relative;
 
   &__phone {
-    position: absolute;
-    top: 71px;
-    left: 200px;
-    max-width: 316px;
-    box-shadow: var(--shadow-card-2);
+    display: none;
+
+    @include respond(tabport) {
+      display: block;
+      position: absolute;
+      top: 7.1rem;
+      left: 20rem;
+      max-width: 31.6rem;
+    }
   }
 
   &__content {
-    margin-left: auto;
-    max-width: 600px;
-    padding-top: 138px;
-    padding-right: 200px;
-    padding-bottom: 103px;
+    padding: 4rem 2rem;
+    text-align: center;
+
+    @include respond(tabport) {
+      text-align: left;
+      margin-left: auto;
+      max-width: 60rem;
+      padding: 13.8rem 20rem 10.3rem 0;
+    }
   }
 
   &__title {
-    max-width: 375px;
     font-size: 4rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: var(--color-cool-grey-10);
+
+    @include respond(tabport) {
+      text-align: left;
+      max-width: 37.5rem;
+    }
+  }
+
+  .Bar {
+    margin: 0 auto;
+    @include respond(tabport) {
+      margin: 0;
+    }
   }
 
   &__text {
+    text-align: left;
     line-height: 2.9rem;
     font-size: 1.8rem;
-    margin-top: 15px;
+    margin-top: 1.5rem;
     margin-bottom: 3rem;
   }
 
+  &__text + .Btn {
+    // display: block;
+    // margin: 0 auto;
+    // text-align: center;
+  }
+
   &__sub-text {
+    text-align: center;
     line-height: 2.6rem;
     font-size: 1.5rem;
     margin-top: 2.5rem;
+
+    @include respond(tabport) {
+      text-align: left;
+    }
   }
 }
