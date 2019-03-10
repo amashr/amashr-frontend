@@ -30,12 +30,18 @@
 
     @include respond(desktop) {
       top: 7.1rem;
+      max-width: 28rem;
+    }
+
+    @include respond(bigdesktop) {
+      top: 7.1rem;
       max-width: 31.6rem;
     }
   }
 
   &__content {
     text-align: center;
+    padding-top: 2rem;
 
     @include respond(tabland) {
       text-align: left;
@@ -44,7 +50,8 @@
     }
 
     @include respond(desktop) {
-      max-width: 60rem;
+      margin-left: 45%;
+      max-width: 100%;
     }
   }
 
