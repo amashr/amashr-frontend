@@ -19,7 +19,7 @@ const Experience = () => (
       </p>
       <Button path="/" desc="Let's Get Started" cssClass="Btn Btn--orange-6" />
       <p className="Experience__sub-text">
-        > Checkout Amas-HR’s service offerings.
+        > Bring all your HR on one platform.
       </p>
     </div>
   </div>
