@@ -3,28 +3,48 @@
 .Experience {
   background: var(--color-blue-vivid-7);
   position: relative;
+  padding: 5rem 2rem;
+
+  @include respond(tabport) {
+    padding: 6rem;
+  }
+
+  @include respond(tabland) {
+    padding: 7rem 5rem;
+  }
+
+  @include respond(desktop) {
+    padding: 10rem 15rem;
+  }
 
   &__phone {
     display: none;
 
-    @include respond(tabport) {
+    @include respond(tabland) {
       display: block;
       position: absolute;
+      top: 6rem;
+      left: 15%;
+      max-width: 26rem;
+    }
+
+    @include respond(desktop) {
       top: 7.1rem;
-      left: 20rem;
       max-width: 31.6rem;
     }
   }
 
   &__content {
-    padding: 4rem 2rem;
     text-align: center;
 
-    @include respond(tabport) {
+    @include respond(tabland) {
       text-align: left;
-      margin-left: auto;
+      margin-left: 45%;
       max-width: 60rem;
-      padding: 13.8rem 20rem 10.3rem 0;
+    }
+
+    @include respond(desktop) {
+      max-width: 60rem;
     }
   }
 
@@ -34,6 +54,10 @@
     color: var(--color-cool-grey-10);
 
     @include respond(tabport) {
+      text-align: center;
+    }
+
+    @include respond(tabland) {
       text-align: left;
       max-width: 37.5rem;
     }
@@ -41,7 +65,7 @@
 
   .Bar {
     margin: 0 auto;
-    @include respond(tabport) {
+    @include respond(tabland) {
       margin: 0;
     }
   }
@@ -52,12 +76,11 @@
     font-size: 1.8rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
-  }
+    text-align: center;
 
-  &__text + .Btn {
-    // display: block;
-    // margin: 0 auto;
-    // text-align: center;
+    @include respond(tabland) {
+      text-align: left;
+    }
   }
 
   &__sub-text {
@@ -66,7 +89,7 @@
     font-size: 1.5rem;
     margin-top: 2.5rem;
 
-    @include respond(tabport) {
+    @include respond(tabland) {
       text-align: left;
     }
   }
