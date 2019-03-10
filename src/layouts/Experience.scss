@@ -17,6 +17,10 @@
     padding: 10rem 15rem;
   }
 
+  @include respond(bigdesktop) {
+    padding: 12rem 17rem;
+  }
+
   &__phone {
     display: none;
 
@@ -34,8 +38,9 @@
     }
 
     @include respond(bigdesktop) {
-      top: 7.1rem;
-      max-width: 31.6rem;
+      top: 10rem;
+      left: 20%;
+      max-width: 100%;
     }
   }
 
@@ -50,7 +55,12 @@
     }
 
     @include respond(desktop) {
-      margin-left: 45%;
+      margin-left: 42%;
+      max-width: 100%;
+    }
+
+    @include respond(bigdesktop) {
+      margin-left: 40%;
       max-width: 100%;
     }
   }
