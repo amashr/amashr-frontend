@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Partnering from './components/Partnering';
+import Header from '../components/Header';
+import Hero from '../layouts/Hero';
+import Partnering from '../layouts/Partnering';
+import Experience from '../layouts/Experience';
 
 class Landing extends Component {
   render() {
@@ -10,6 +11,7 @@ class Landing extends Component {
         <Header />
         <Hero />
         <Partnering />
+        <Experience />
       </Fragment>
     );
   }
