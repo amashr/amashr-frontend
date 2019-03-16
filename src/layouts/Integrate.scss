@@ -1,0 +1,28 @@
+@import '../assets/sass/mixins.scss';
+
+.Integrate {
+  padding-top: 14rem;
+
+  &__title {
+    margin-top: 10.4rem;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    max-width: 67.4rem;
+    color: var(--color-blue-vivid-6);
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    max-width: 80.2rem;
+    padding-bottom: 3rem;
+  }
+
+  &__sub-text {
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__logos {
+    max-width: 87.4rem;
+  }
+}
