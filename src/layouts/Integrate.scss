@@ -1,18 +1,27 @@
 @import '../assets/sass/mixins.scss';
 
 .Integrate {
-  padding-top: 14rem;
-  padding-bottom: 7rem;
+  padding: 5rem 2rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @include respond(tabport) {
+    padding: 14rem 0 7rem 0;
+  }
+
   &__title {
-    margin-top: 10.4rem;
     margin-bottom: 4rem;
     font-size: 4rem;
     max-width: 67.4rem;
     color: var(--color-blue-vivid-6);
+
+    @include respond(tabport) {
+      margin-top: 10.4rem;
+      margin-bottom: 4rem;
+      max-width: 67.4rem;
+    }
   }
 
   &__text {
@@ -23,7 +32,11 @@
 
   &__sub-text {
     font-size: 1.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1.5rem;
+
+    @include respond(tabport) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__logos {
@@ -31,26 +44,24 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   &__logo-box {
-    flex-basis: 151px;
-    height: 125px;
-    margin-bottom: 30px;
-
-    border-right: 1px solid var(--color-cool-grey-8);
+    flex-basis: 15.1rem;
+    height: 12.5rem;
+    margin-bottom: 3rem;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    &:nth-child(5n) {
-      border-right: none;
+    @include respond(tabport) {
+      border-right: 1px solid var(--color-cool-grey-8);
+
+      &:nth-child(5n) {
+        border-right: none;
+      }
     }
-  }
-
-  &__logo {
-    padding-right: 40px;
   }
 }
