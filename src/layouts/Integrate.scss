@@ -12,6 +12,10 @@
   }
 
   @include respond(tabland) {
+    padding: 7rem 5rem;
+  }
+
+  @include respond(desktop) {
     padding: 14rem 0 7rem 0;
   }
 
