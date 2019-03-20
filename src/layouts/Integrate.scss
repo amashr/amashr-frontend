@@ -16,6 +16,10 @@
   }
 
   @include respond(desktop) {
+    padding: 9rem 0 7rem 0;
+  }
+
+  @include respond(bigdesktop) {
     padding: 14rem 0 7rem 0;
   }
 
