@@ -1,6 +1,7 @@
 import React from 'react';
 
 import boxLogo from '../assets/images/logos/box-logo.webp';
+import './Integrate.scss';
 
 const Integrate = () => (
   <div className="Integrate">
