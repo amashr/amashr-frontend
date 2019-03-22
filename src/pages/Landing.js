@@ -4,6 +4,7 @@ import Hero from '../layouts/Hero';
 import Partnering from '../layouts/Partnering';
 import Experience from '../layouts/Experience';
 import Integrate from '../layouts/Integrate';
+import Solution from '../layouts/Solution';
 
 class Landing extends Component {
   render() {
@@ -14,6 +15,7 @@ class Landing extends Component {
         <Partnering />
         <Experience />
         <Integrate />
+        <Solution />
       </Fragment>
     );
   }
