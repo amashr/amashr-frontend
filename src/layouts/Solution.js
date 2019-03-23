@@ -17,6 +17,11 @@ const Solution = () => (
     </p>
     <div className="Solution__card-wrapper">
       <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
   </div>
 );

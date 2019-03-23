@@ -1,5 +1,37 @@
 .Solution {
   background: var(--color-blue-vivid-7);
-  padding: 100px 150px;
-  font-weight: 300;
+  padding: 10rem 15rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 4.5rem;
+    color: var(--color-cool-grey-10);
+    padding-bottom: 2rem;
+    align-self: center;
+  }
+
+  &__title + .Bar {
+    align-self: center;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    padding-top: 2.4rem;
+    padding-bottom: 8rem;
+    max-width: 55.2rem;
+    align-self: center;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .Card {
+      // flex: 1 1 auto;
+      // margin-bottom: 20px;
+    }
+  }
 }
