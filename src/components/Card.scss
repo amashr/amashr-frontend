@@ -1,0 +1,30 @@
+.Card {
+  max-width: 346px;
+  background: var(--color-cool-grey-10);
+  box-shadow: var(--shadow-card-1);
+  border-radius: 10px;
+  padding: 10px 10px 17px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    max-width: 150px;
+    align-self: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-blue-vivid-6);
+    padding-top: 30px;
+    padding-bottom: 17px;
+    font-weight: 300;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+  }
+}

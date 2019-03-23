@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Solution.scss';
 import Bar from '../components/Bar';
+import Card from '../components/Card';
 
 const Solution = () => (
   <div className="Solution">
@@ -15,15 +16,7 @@ const Solution = () => (
       engagement, and compliance.
     </p>
     <div className="Solution__card-wrapper">
-      {/* Create Card component */}
-      <div className="Card">
-        <img src="" alt="Payroll" className="Card__image" />
-        <h3 className="Card__title">Payroll Management</h3>
-        <p className="Card__text">
-          Impove efficiecy by streaming core processes and providing enhanced
-          access to employee information.
-        </p>
-      </div>
+      <Card />
     </div>
   </div>
 );
