@@ -1,48 +1,10 @@
-:root {
-  --color-cool-grey-6: #3e4c59;
-  --color-cool-grey-7: #9aa5b1;
-  --color-cool-grey-9: #e4e7eb;
-  --color-cool-grey-10: #f5f7fa;
+@import './assets/sass/mixins.scss';
+@import './assets/sass/variables.scss';
 
-  --color-cyan-vivid-4: #0fb5ba;
-
-  --color-orange-vivid-6: #f9703e;
-
-  --color-blue-vivid-3: #03449e;
-  --color-blue-vivid-4: #0552b5;
-  --color-blue-vivid-6: #2186eb;
-  --color-blue-vivid-7: #47a3f3;
-
-  --gradient-blue-vivid-1: linear-gradient(
-    180deg,
-    var(--color-blue-vivid-4) 49.17%,
-    var(--color-blue-vivid-7) 100%
-  );
-
-  --shadow-btn-1: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  --shadow-btn-2: 0 2rem 4rem rgba(0, 0, 0, 0.25);
-  --shadow-card-1: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
-  --shadow-card-2: 0 3rem 6rem rgba(0, 0, 0, 0.25);
-
-  --line: 1px solid var(--color-cool-grey-10);
-}
-
+///////////////////
+/////// FONT
 @font-face {
-  font-family: 'Proxima Nova Bd';
-  src: url('./assets/fonts/ProximaNova-Semibold.eot');
-  src: url('./assets/fonts/ProximaNova-Semibold.eot?#iefix')
-      format('embedded-opentype'),
-    url('./assets/fonts/ProximaNova-Semibold.woff2') format('woff2'),
-    url('./assets/fonts/ProximaNova-Semibold.woff') format('woff'),
-    url('./assets/fonts/ProximaNova-Semibold.ttf') format('truetype'),
-    url('./assets/fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold')
-      format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Rg';
+  font-family: 'Proxima Nova';
   src: url('./assets/fonts/ProximaNova-Regular.eot');
   src: url('./assets/fonts/ProximaNova-Regular.eot?#iefix')
       format('embedded-opentype'),
@@ -55,6 +17,8 @@
   font-style: normal;
 }
 
+///////////////////
+/////// BASE
 * {
   &,
   &::before,
@@ -67,13 +31,29 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  font-size: 44%;
+
+  @include respond(tabport) {
+    font-size: 50%;
+  }
+
+  @include respond(tabland) {
+    font-size: 55%;
+  }
+
+  @include respond(desktop) {
+    font-size: 62.5%;
+  }
+
+  @include respond(bigdesktop) {
+    font-size: 70%;
+  }
 }
 
 body {
-  font-family: 'Proxima Nova Bd', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   position: relative;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-cool-grey-6);
   background: var(--color-cool-grey-10);
 }

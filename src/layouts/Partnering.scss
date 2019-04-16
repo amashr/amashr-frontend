@@ -1,0 +1,89 @@
+@import '../assets/sass/mixins.scss';
+
+.Partnering {
+  padding: 5rem 2rem;
+
+  @include respond(tabport) {
+    padding: 6rem;
+  }
+
+  @include respond(tabland) {
+    padding: 7rem 5rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include respond(desktop) {
+    padding: 0 9rem;
+    min-height: 60rem;
+
+    align-items: center;
+  }
+
+  @include respond(bigdesktop) {
+    padding: 0 15rem;
+    min-height: 70rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(tabland) {
+      flex: 1;
+      padding-right: 2.5rem;
+    }
+
+    @include respond(desktop) {
+      padding-right: 4rem;
+    }
+
+    @include respond(bigdesktop) {
+      padding-right: 14rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: var(--color-blue-vivid-6);
+  }
+
+  &__text {
+    line-height: 2.9rem;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @include respond(tabland) {
+      text-align: left;
+    }
+  }
+
+  &__text + .Btn {
+    align-self: center;
+  }
+
+  &__sub-text {
+    line-height: 2.6rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  &__img {
+    display: none;
+
+    @include respond(tabland) {
+      display: block;
+      height: 40rem;
+      flex: 1;
+    }
+
+    @include respond(bigdesktop) {
+      height: 60rem;
+    }
+  }
+}
